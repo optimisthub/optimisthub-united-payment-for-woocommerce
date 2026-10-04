@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: OptimistHub Payment Gateway with United Payment for WooCommerce
+ * Plugin Name: Optimist Hub Payment Gateway with United Payment for WooCommerce
  * Plugin URI: https://unitedpayment.ge
  * Description: United Payment integration for WooCommerce, supporting payments in Georgia.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: optimisthub
  * Author URI: https://www.optimisthub.com
  * Text Domain: optimisthub-united-payment-for-woocommerce
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Define plugin constants.
-define( 'UNITED_PAYMENT_VERSION', '1.0.1' );
+define( 'UNITED_PAYMENT_VERSION', '1.0.2' );
 define( 'UNITED_PAYMENT_PLUGIN_FILE', __FILE__ );
 define( 'UNITED_PAYMENT_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'UNITED_PAYMENT_PLUGIN_URL', plugin_dir_url( __FILE__ ) );

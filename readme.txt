@@ -1,10 +1,10 @@
-=== OptimistHub Payment Gateway with United Payment for WooCommerce ===
+=== Optimist Hub Payment Gateway with United Payment for WooCommerce ===
 Contributors: optimisthub, fatih-toprak
-Tags: woocommerce, payment gateway, georgia, united payment, united payment georgia, gel
+Tags: woocommerce, payment gateway, georgia, united payment, gel
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 WC requires at least: 6.0
@@ -77,6 +77,12 @@ Yes. Payment gateways require HTTPS. Make sure your checkout pages are served ov
 
 == Changelog ==
 
+= 1.0.2 =
+
+* Corrected the brand name in the plugin title: "OptimistHub" is now written "Optimist Hub", matching the company name.
+* Reduced the tag list to the five-tag limit. "united payment georgia" was removed because "united payment" and "georgia" already cover that phrase across both tags, and the freed slot lets "gel" take effect instead of being ignored.
+* No functional changes. The plugin slug, directory name and all URLs are unchanged.
+
 = 1.0.1 =
 
 * Updated the "Tested up to" declaration to WordPress 7.1.
@@ -92,6 +98,10 @@ Yes. Payment gateways require HTTPS. Make sure your checkout pages are served ov
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+
+Cosmetic release. Corrects the brand name in the plugin title only. No functional changes; the plugin slug and URLs are unchanged.
 
 = 1.0.1 =
 
