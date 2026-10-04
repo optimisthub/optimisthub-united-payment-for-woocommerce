@@ -1,0 +1,58 @@
+{
+    "packages": [
+        {
+            "name": "moka-united/moka-united-ge-php",
+            "version": "1.0.0",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/optimisthub/moka-united-ge-php.git",
+                "reference": "564b8829ebfe0a06c3b8e1014ca4b03e851ad7c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/optimisthub/moka-united-ge-php/zipball/564b8829ebfe0a06c3b8e1014ca4b03e851ad7c7",
+                "reference": "564b8829ebfe0a06c3b8e1014ca4b03e851ad7c7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.88"
+            },
+            "time": "2025-10-14T13:46:42+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "MokaUnitedGE\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "United Payment Georgia PHP Client",
+            "keywords": [
+                "moka united georgia",
+                "moka united georgia api",
+                "moka united georgia php",
+                "moka united georgia php client",
+                "united payment georgia",
+                "united payment georgia api",
+                "united payment georgia php",
+                "united payment georgia php client"
+            ],
+            "support": {
+                "issues": "https://github.com/optimisthub/moka-united-ge-php/issues",
+                "source": "https://github.com/optimisthub/moka-united-ge-php/tree/1.0"
+            },
+            "install-path": "../moka-united/moka-united-ge-php"
+        }
+    ],
+    "dev": false,
+    "dev-package-names": []
+}

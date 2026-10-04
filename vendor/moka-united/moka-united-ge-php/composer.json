@@ -1,0 +1,33 @@
+{
+  "name": "moka-united/moka-united-ge-php",
+  "description": "United Payment Georgia PHP Client",
+  "version": "1.0.0",
+  "type": "library",
+  "keywords": [
+    "moka united georgia",
+    "moka united georgia php",
+    "moka united georgia api",
+    "moka united georgia php client",
+    "united payment georgia",
+    "united payment georgia php",
+    "united payment georgia api",
+    "united payment georgia php client"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=7.4",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.88"
+  },
+  "autoload": {
+    "psr-4": {
+      "MokaUnitedGE\\": "src/"
+    }
+  },
+  "scripts": {
+    "lint": "php-cs-fixer fix src"
+  }
+}

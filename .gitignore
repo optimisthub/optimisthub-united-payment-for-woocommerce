@@ -1,0 +1,27 @@
+# Production dependencies are committed so the plugin works when installed
+# straight from this repository. Development tooling is not committed.
+/vendor/bin/
+/vendor/squizlabs/
+/vendor/wp-coding-standards/
+/vendor/phpcompatibility/
+/vendor/phpcsstandards/
+/vendor/dealerdirect/
+/vendor/woocommerce/
+/vendor/wp-cli/
+/composer.lock
+
+# Local tooling caches.
+/.composer-cache/
+/phpcs.xml
+/.phpunit.result.cache
+/.phpcs-cache
+
+# Local test environment (not part of the plugin).
+/_wptest/
+/.build/
+/.gh-cache/
+.npmrc
+
+# OS noise.
+.DS_Store
+Thumbs.db

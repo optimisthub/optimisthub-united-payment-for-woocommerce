@@ -1,0 +1,40 @@
+{
+	"name": "optimisthub/optimisthub-united-payment-for-woocommerce",
+	"description": "United Payment gateway integration for WooCommerce, supporting payments in Georgia (GEL).",
+	"version": "1.0.1",
+	"type": "wordpress-plugin",
+	"license": "GPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Optimist Hub",
+			"homepage": "https://optimisthub.com"
+		}
+	],
+	"require": {
+		"php": ">=7.4",
+		"moka-united/moka-united-ge-php": "^1.0"
+	},
+	"require-dev": {
+		"phpcompatibility/phpcompatibility-wp": "*",
+		"woocommerce/woocommerce-sniffs": "^1.0",
+		"wp-coding-standards/wpcs": "^3.0",
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+		"wp-cli/i18n-command": "^2.6"
+	},
+	"autoload": {
+		"psr-4": {
+			"UnitedPayment\\WooCommerce\\": "src/"
+		}
+	},
+	"config": {
+		"optimize-autoloader": true,
+		"sort-packages": true,
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	},
+	"scripts": {
+		"lint": "find . -path ./vendor -prune -o -name '*.php' -print0 | xargs -0 -n1 php -l",
+		"phpcs": "phpcs --standard=phpcs.xml.dist"
+	}
+}

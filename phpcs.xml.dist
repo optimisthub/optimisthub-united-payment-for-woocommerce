@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<ruleset name="OptimistHub United Payment for WooCommerce">
+    <description>WordPress and WooCommerce Coding Standards for the United Payment gateway.</description>
+
+    <file>optimisthub-united-payment-for-woocommerce.php</file>
+    <file>uninstall.php</file>
+    <file>src/</file>
+
+    <exclude-pattern>/vendor/*</exclude-pattern>
+    <exclude-pattern>/node_modules/*</exclude-pattern>
+    <exclude-pattern>/assets/js/*</exclude-pattern>
+    <exclude-pattern>/languages/*</exclude-pattern>
+
+    <arg name="extensions" value="php"/>
+    <arg name="colors"/>
+    <arg value="sp"/>
+    <arg name="parallel" value="8"/>
+
+    <rule ref="WordPress">
+        <!-- PSR-4 file names (API.php, Gateway.php) are intentional. -->
+        <exclude name="WordPress.Files.FileName"/>
+    </rule>
+
+    <!--
+        WooCommerce-specific sniffs are applied only when the
+        woocommerce/woocommerce-sniffs package is installed. Install it with
+        `composer install` (it is a dev dependency) to enable the WordPress
+        and WooCommerce rule set together.
+    -->
+    <rule ref="WordPress.WP.I18n">
+        <properties>
+            <property name="text_domain" type="array">
+                <element value="optimisthub-united-payment-for-woocommerce"/>
+            </property>
+        </properties>
+    </rule>
+
+    <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+        <properties>
+            <property name="prefixes" type="array">
+                <element value="united_payment"/>
+                <element value="UNITED_PAYMENT"/>
+                <element value="UnitedPayment"/>
+                <element value="optimisthub"/>
+            </property>
+        </properties>
+    </rule>
+
+    <!--
+        The WordPress.org plugin directory header and the gateway settings
+        fields intentionally use third-party service names.
+    -->
+    <rule ref="WordPress.WP.I18n.NonSingularStringLiteralDomain">
+        <severity>0</severity>
+    </rule>
+
+    <!--
+        Short array syntax ([]) is used consistently throughout the plugin.
+        It has been valid since PHP 5.4, WordPress core itself moved to it,
+        and the plugin requires PHP 7.4. Rewriting ~80 lines to array() would
+        produce a large diff with no behavioural benefit.
+    -->
+    <rule ref="Universal.Arrays.DisallowShortArraySyntax">
+        <severity>0</severity>
+    </rule>
+
+    <!--
+        src/Sandbox/Response.php deliberately mirrors the camelCase method
+        names of the official Moka United client response object so that
+        sandbox responses are drop-in compatible with live ones. Renaming
+        these methods would break that compatibility.
+    -->
+    <rule ref="WordPress.NamingConventions.ValidFunctionName.MethodNameInvalid">
+        <exclude-pattern>/src/Sandbox/*</exclude-pattern>
+    </rule>
+
+    <config name="minimum_supported_wp_version" value="6.0"/>
+    <config name="testVersion" value="7.4-"/>
+</ruleset>

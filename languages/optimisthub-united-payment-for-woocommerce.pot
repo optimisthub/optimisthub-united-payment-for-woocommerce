@@ -1,0 +1,416 @@
+# Copyright (C) 2025 optimisthub
+# This file is distributed under the GPL v3.
+msgid ""
+msgstr ""
+"Project-Id-Version: OptimistHub Payment Gateway with United Payment for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/optimisthub-united-payment-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-11-15T18:52:23+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: optimisthub-united-payment-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+#: optimisthub-united-payment-for-woocommerce.php
+msgid "OptimistHub Payment Gateway with United Payment for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: optimisthub-united-payment-for-woocommerce.php
+msgid "https://unitedpayment.ge"
+msgstr ""
+
+#. Description of the plugin
+#: optimisthub-united-payment-for-woocommerce.php
+msgid "United Payment integration for WooCommerce, supporting payments in Georgia."
+msgstr ""
+
+#. Author of the plugin
+#: optimisthub-united-payment-for-woocommerce.php
+msgid "optimisthub"
+msgstr ""
+
+#. Author URI of the plugin
+#: optimisthub-united-payment-for-woocommerce.php
+msgid "https://www.optimisthub.com"
+msgstr ""
+
+#. translators: %s: WooCommerce plugin link
+#: optimisthub-united-payment-for-woocommerce.php:106
+#, php-format
+msgid "<strong>United Payment Gateway for WooCommerce</strong> requires WooCommerce to be installed and active. You can download %s here."
+msgstr ""
+
+#: optimisthub-united-payment-for-woocommerce.php:123
+msgid "Settings"
+msgstr ""
+
+#: src/ErrorMessages.php:36
+msgid "A system error occurred. Please try again or contact support."
+msgstr ""
+
+#. translators: %s: Original error message
+#: src/ErrorMessages.php:43
+#, php-format
+msgid "Payment processing error: %s"
+msgstr ""
+
+#: src/ErrorMessages.php:48
+msgid "An unexpected error occurred during payment processing. Please try again."
+msgstr ""
+
+#: src/ErrorMessages.php:59
+#: src/ErrorMessages.php:72
+msgid "Payment configuration error. Please contact the merchant."
+msgstr ""
+
+#: src/ErrorMessages.php:60
+msgid "Merchant account not found. Please contact the merchant."
+msgstr ""
+
+#: src/ErrorMessages.php:61
+msgid "Payment terminal not configured. Please contact the merchant."
+msgstr ""
+
+#: src/ErrorMessages.php:64
+msgid "Merchant daily transaction limit exceeded. Please try again tomorrow or contact the merchant."
+msgstr ""
+
+#: src/ErrorMessages.php:65
+msgid "Your card has reached its daily transaction limit. Please try a different card or wait until tomorrow."
+msgstr ""
+
+#: src/ErrorMessages.php:68
+msgid "Card information is invalid. Please check your card details and try again."
+msgstr ""
+
+#: src/ErrorMessages.php:71
+msgid "Payment request is invalid. Please try again."
+msgstr ""
+
+#: src/ErrorMessages.php:73
+msgid "Invalid currency. Only GEL is supported."
+msgstr ""
+
+#: src/ErrorMessages.php:74
+msgid "Invalid installment number. Please select between 1 and 12 installments."
+msgstr ""
+
+#: src/ErrorMessages.php:75
+msgid "Installments are not available for foreign currency transactions."
+msgstr ""
+
+#: src/ErrorMessages.php:76
+msgid "Foreign currency payments are not available. Please contact the merchant."
+msgstr ""
+
+#: src/ErrorMessages.php:77
+msgid "This payment requires authorization. Please contact the merchant."
+msgstr ""
+
+#: src/ErrorMessages.php:78
+msgid "Pre-authorization is not enabled for this merchant."
+msgstr ""
+
+#: src/ErrorMessages.php:79
+msgid "Pooled payments are not available for this merchant."
+msgstr ""
+
+#: src/ErrorMessages.php:80
+msgid "This merchant requires pooled payments. Please contact the merchant."
+msgstr ""
+
+#: src/ErrorMessages.php:81
+msgid "Saved cards are not available for this merchant."
+msgstr ""
+
+#: src/ErrorMessages.php:82
+msgid "Cannot use saved card token while saving a card. Please contact support."
+msgstr ""
+
+#: src/ErrorMessages.php:83
+msgid "Saved card not found. Please enter your card details again."
+msgstr ""
+
+#: src/ErrorMessages.php:84
+msgid "Cannot provide both card number and saved card token. Please try again."
+msgstr ""
+
+#: src/ErrorMessages.php:85
+msgid "This payment channel is not available for the merchant. Please contact the merchant."
+msgstr ""
+
+#: src/ErrorMessages.php:86
+msgid "Payment request from your location is not allowed. Please contact the merchant."
+msgstr ""
+
+#: src/ErrorMessages.php:87
+msgid "No suitable payment terminal found for your card. Please try a different card."
+msgstr ""
+
+#: src/ErrorMessages.php:88
+msgid "This installment option is not available for your card. Please select a different installment plan."
+msgstr ""
+
+#: src/ErrorMessages.php:89
+msgid "This installment option is not available. Please select a different installment plan."
+msgstr ""
+
+#: src/ErrorMessages.php:90
+msgid "Merchant commission rate not configured for this installment plan. Please contact the merchant."
+msgstr ""
+
+#: src/ErrorMessages.php:91
+msgid "Merchant group commission rate not configured. Please contact the merchant."
+msgstr ""
+
+#: src/ErrorMessages.php:92
+msgid "Invalid merchant configuration. Please contact the merchant."
+msgstr ""
+
+#: src/ErrorMessages.php:93
+msgid "Invalid product price. Please contact the merchant."
+msgstr ""
+
+#: src/ErrorMessages.php:94
+msgid "Invalid product quantity. Please contact the merchant."
+msgstr ""
+
+#: src/ErrorMessages.php:95
+msgid "Cart amount does not match payment amount. Please try again."
+msgstr ""
+
+#: src/ErrorMessages.php:96
+msgid "Product not found in merchant catalog. Please contact the merchant."
+msgstr ""
+
+#: src/Gateway.php:58
+#: src/Gateway.php:100
+#: src/Sandbox/PaymentPage.php:173
+#: src/Sandbox/PaymentPage.php:175
+msgid "United Payment"
+msgstr ""
+
+#: src/Gateway.php:59
+msgid "Accept payments through United Payment redirect gateway."
+msgstr ""
+
+#: src/Gateway.php:62
+msgid "Pay with United Payment"
+msgstr ""
+
+#: src/Gateway.php:91
+msgid "Enable/Disable"
+msgstr ""
+
+#: src/Gateway.php:93
+msgid "Enable United Payment"
+msgstr ""
+
+#: src/Gateway.php:97
+msgid "Title"
+msgstr ""
+
+#: src/Gateway.php:99
+msgid "Payment method title shown to customers during checkout."
+msgstr ""
+
+#: src/Gateway.php:104
+msgid "Description"
+msgstr ""
+
+#: src/Gateway.php:106
+msgid "Payment method description shown to customers during checkout."
+msgstr ""
+
+#: src/Gateway.php:107
+#: src/Gateway.php:202
+msgid "Pay securely with United Payment."
+msgstr ""
+
+#: src/Gateway.php:111
+msgid "Dealer Code"
+msgstr ""
+
+#: src/Gateway.php:113
+msgid "Your United Payment dealer code."
+msgstr ""
+
+#: src/Gateway.php:118
+msgid "API Username"
+msgstr ""
+
+#: src/Gateway.php:120
+msgid "Your United Payment API username."
+msgstr ""
+
+#: src/Gateway.php:125
+msgid "API Password"
+msgstr ""
+
+#: src/Gateway.php:127
+msgid "Your United Payment API password."
+msgstr ""
+
+#: src/Gateway.php:132
+#: src/Sandbox/PaymentPage.php:176
+msgid "Test Mode"
+msgstr ""
+
+#: src/Gateway.php:134
+msgid "Enable Test Mode"
+msgstr ""
+
+#: src/Gateway.php:135
+msgid "Place the payment gateway in test mode using test API credentials."
+msgstr ""
+
+#: src/Gateway.php:158
+msgid "United Payment requires Dealer Code, Username and Password to be configured."
+msgstr ""
+
+#: src/Gateway.php:215
+msgid "United Payment Settings"
+msgstr ""
+
+#: src/Gateway.php:216
+msgid "Configure your United Payment credentials to accept payments."
+msgstr ""
+
+#: src/Gateway.php:221
+msgid "Test Mode Active"
+msgstr ""
+
+#: src/Gateway.php:222
+msgid "The payment gateway is currently in test mode. Transactions will not be processed as real payments."
+msgstr ""
+
+#: src/Gateway.php:243
+msgid "Invalid order."
+msgstr ""
+
+#: src/Gateway.php:262
+msgid "Awaiting United Payment payment."
+msgstr ""
+
+#: src/Gateway.php:270
+msgid "Payment URL not received from gateway."
+msgstr ""
+
+#. translators: %s: CodeForHash value
+#: src/Gateway.php:279
+#, php-format
+msgid "United Payment payment initiated. CodeForHash: %s"
+msgstr ""
+
+#. translators: %s: Error message
+#: src/Gateway.php:305
+#, php-format
+msgid "Payment error: %s"
+msgstr ""
+
+#. translators: %s: Error message
+#: src/Gateway.php:315
+#, php-format
+msgid "United Payment payment failed: %s"
+msgstr ""
+
+#: src/Gateway.php:361
+msgid "Invalid callback request."
+msgstr ""
+
+#: src/Gateway.php:361
+#: src/Gateway.php:370
+#: src/Gateway.php:384
+msgid "Payment Error"
+msgstr ""
+
+#: src/Gateway.php:370
+msgid "Order not found."
+msgstr ""
+
+#: src/Gateway.php:384
+msgid "Invalid order key."
+msgstr ""
+
+#: src/Gateway.php:405
+msgid "United Payment: Hash validation failed."
+msgstr ""
+
+#: src/Gateway.php:406
+msgid "Payment verification failed."
+msgstr ""
+
+#. translators: %s: Transaction code
+#: src/Gateway.php:454
+#, php-format
+msgid "United Payment payment successful. Transaction Code: %s"
+msgstr ""
+
+#: src/Gateway.php:487
+msgid "Payment declined by bank."
+msgstr ""
+
+#. translators: 1: ResultCode, 2: Error message
+#: src/Gateway.php:502
+#, php-format
+msgid "United Payment payment failed [%1$s]: %2$s"
+msgstr ""
+
+#. translators: %s: Error message
+#: src/Gateway.php:522
+#, php-format
+msgid "Payment failed: %s"
+msgstr ""
+
+#: src/Sandbox/PaymentPage.php:39
+msgid "Invalid payment parameters."
+msgstr ""
+
+#: src/Sandbox/PaymentPage.php:46
+msgid "Payment session expired."
+msgstr ""
+
+#: src/Sandbox/PaymentPage.php:158
+msgid "Sandbox Payment Gateway"
+msgstr ""
+
+#: src/Sandbox/PaymentPage.php:181
+msgid "Test Environment"
+msgstr ""
+
+#: src/Sandbox/PaymentPage.php:182
+msgid "This is a test transaction. No real payment will be processed. Choose a payment result to continue."
+msgstr ""
+
+#: src/Sandbox/PaymentPage.php:186
+msgid "Payment Details"
+msgstr ""
+
+#: src/Sandbox/PaymentPage.php:189
+msgid "3D Transaction Code:"
+msgstr ""
+
+#: src/Sandbox/PaymentPage.php:193
+msgid "Transaction Reference:"
+msgstr ""
+
+#: src/Sandbox/PaymentPage.php:197
+msgid "Amount:"
+msgstr ""
+
+#: src/Sandbox/PaymentPage.php:201
+msgid "Dealer Code:"
+msgstr ""
+
+#: src/Sandbox/PaymentPage.php:212
+msgid "Complete Payment"
+msgstr ""
+
+#: src/Sandbox/PaymentPage.php:216
+msgid "Decline Payment"
+msgstr ""
