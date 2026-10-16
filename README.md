@@ -15,7 +15,7 @@
 | **Requires WooCommerce** | 6.0 |
 | **WC tested up to** | 11.1 |
 | **Requires PHP** | 7.4+ |
-| **Stable version** | 1.0.2 |
+| **Stable version** | 1.0.3 |
 | **License** | GPLv3 or later |
 | **License URI** | https://www.gnu.org/licenses/gpl-3.0.html |
 
@@ -58,9 +58,11 @@ Accepts credit and debit card payments in Georgian Lari (GEL) on your WooCommerc
 
 ### Manually
 
-1. Download the ZIP and extract the `optimisthub-united-payment-for-woocommerce` folder to `/wp-content/plugins/`.
+1. Download the ZIP from the [WordPress Plugin Directory](https://wordpress.org/plugins/optimisthub-united-payment-for-woocommerce/) and extract the `optimisthub-united-payment-for-woocommerce` folder to `/wp-content/plugins/`.
 2. Activate the plugin from the **Plugins** menu.
 3. Configure it under **WooCommerce → Settings → Payments**.
+
+> **Do not install the repository source tree (`…-master.zip`) directly.** It has no `vendor/` directory, so the plugin's classes cannot be autoloaded and the site stops with `Class "UnitedPayment\WooCommerce\Sandbox\PaymentPage" not found`. Either use the release ZIP linked above, or run `composer install` inside the plugin folder after copying it.
 
 ### Composer
 
@@ -161,6 +163,11 @@ vendor/bin/phpcs --standard=phpcs.xml.dist   # WordPress + WooCommerce standards
 ```
 
 ## Changelog
+
+### 1.0.3
+
+- Hardened the plugin against an incomplete installation. When the Composer dependencies are missing — for example when the plugin is copied from the development repository instead of the released package — the plugin now shows an admin notice with the fix instead of stopping the site with `Class "UnitedPayment\WooCommerce\Sandbox\PaymentPage" not found`.
+- No changes to the payment flow.
 
 ### 1.0.2
 

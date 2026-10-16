@@ -4,7 +4,7 @@ Tags: woocommerce, payment gateway, georgia, united payment, gel
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 WC requires at least: 6.0
@@ -77,6 +77,11 @@ Yes. Payment gateways require HTTPS. Make sure your checkout pages are served ov
 
 == Changelog ==
 
+= 1.0.3 =
+
+* Hardened the plugin against an incomplete installation. When the Composer dependencies are missing, for example when the plugin is copied from the development repository instead of the released package, the plugin now shows an admin notice with the fix instead of stopping the site with `Class "UnitedPayment\WooCommerce\Sandbox\PaymentPage" not found`.
+* No changes to the payment flow.
+
 = 1.0.2 =
 
 * Corrected the brand name in the plugin title: "OptimistHub" is now written "Optimist Hub", matching the company name.
@@ -98,6 +103,10 @@ Yes. Payment gateways require HTTPS. Make sure your checkout pages are served ov
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.0.3 =
+
+Defensive release. An incomplete installation now shows an admin notice with the fix instead of a fatal error.
 
 = 1.0.2 =
 
